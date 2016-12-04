@@ -1,10 +1,8 @@
 package ca.dosfx.juju;
 
-import akka.dispatch.sysmsg.Create;
-import ca.dosfx.juju.items.JuJuItems;
+import ca.dosfx.juju.items.ItemRegistry;
 import ca.dosfx.juju.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -35,7 +33,7 @@ public class JuJuMod
     {
         tabJuJu = new CreativeTabJuJu(CreativeTabs.getNextID());
 
-        JuJuItems.preInit();
+        ItemRegistry.preInit();
 
         proxy.preInit(event);
     }
