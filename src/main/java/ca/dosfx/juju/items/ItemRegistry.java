@@ -2,6 +2,7 @@ package ca.dosfx.juju.items;
 
 import ca.dosfx.juju.JuJuMod;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemSword;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -24,6 +25,6 @@ public class ItemRegistry
 
         JuJuMod.proxy.registerItem(item);
 
-        return GameRegistry.register(item, new ResourceLocation(JuJuMod.MODID, ItemNames.CitrineItem));
+        return GameRegistry.register(item, new ResourceLocation(JuJuMod.MODID, name));
     }
 }
