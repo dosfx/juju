@@ -6,4 +6,5 @@ package ca.dosfx.juju.items;
 public class ItemNames
 {
     public static final String CitrineItem = "citrine_item";
+    public static final String CitrineSword = "citrine_sword";
 }
