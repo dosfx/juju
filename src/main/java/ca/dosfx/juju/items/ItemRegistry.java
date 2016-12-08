@@ -12,18 +12,14 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ItemRegistry
 {
     // Gems
-    public static Item citrineItem;
-
-    // Swords
-    public static Item citrineSword;
+    public static GemItemCollection citrineItems;
 
     public static void preInit()
     {
-        citrineItem =  registerItem(new Item(), ItemNames.CitrineItem);
-        citrineSword = registerItem(new ItemSword(Item.ToolMaterial.DIAMOND), ItemNames.CitrineSword);
+        citrineItems = new GemItemCollection("Citrine");
     }
 
-    private static Item registerItem(Item item, String name)
+    public static Item registerItem(Item item, String name)
     {
         item.setCreativeTab(JuJuMod.tabJuJu);
         item.setUnlocalizedName(name);
