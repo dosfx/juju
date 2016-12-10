@@ -1,5 +1,6 @@
 package ca.dosfx.juju;
 
+import ca.dosfx.juju.block.BlockRegistry;
 import ca.dosfx.juju.item.ItemRegistry;
 import ca.dosfx.juju.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
@@ -34,6 +35,7 @@ public class JuJuMod
         tabJuJu = new CreativeTabJuJu(CreativeTabs.getNextID());
 
         ItemRegistry.preInit();
+        BlockRegistry.preInit();
 
         proxy.preInit(event);
     }

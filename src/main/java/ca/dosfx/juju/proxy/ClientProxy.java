@@ -1,6 +1,8 @@
 package ca.dosfx.juju.proxy;
 
 import ca.dosfx.juju.JuJuMod;
+import ca.dosfx.juju.block.BlockRegistry;
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -21,7 +23,6 @@ public class ClientProxy extends CommonProxy
     @Override
     public void preInit(FMLPreInitializationEvent event)
     {
-
     }
 
     @Override
@@ -32,6 +33,8 @@ public class ClientProxy extends CommonProxy
             Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0,
                     new ModelResourceLocation(JuJuMod.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
         }
+
+        BlockRegistry.registerRenders();
     }
 
     @Override
