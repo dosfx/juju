@@ -1,4 +1,4 @@
-package ca.dosfx.juju.items;
+package ca.dosfx.juju.item;
 
 import net.minecraft.item.ItemAxe;
 

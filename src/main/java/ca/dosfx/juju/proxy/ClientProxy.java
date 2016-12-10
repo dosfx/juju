@@ -1,7 +1,6 @@
 package ca.dosfx.juju.proxy;
 
 import ca.dosfx.juju.JuJuMod;
-import ca.dosfx.juju.items.ItemRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;

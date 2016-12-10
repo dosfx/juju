@@ -1,6 +1,6 @@
 package ca.dosfx.juju;
 
-import ca.dosfx.juju.items.ItemRegistry;
+import ca.dosfx.juju.item.ItemRegistry;
 import ca.dosfx.juju.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;

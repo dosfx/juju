@@ -1,4 +1,4 @@
-package ca.dosfx.juju.items;
+package ca.dosfx.juju.item;
 
 /**
  * Created by Dos on 2016-12-04.

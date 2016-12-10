@@ -1,8 +1,7 @@
-package ca.dosfx.juju.items;
+package ca.dosfx.juju.item;
 
 import ca.dosfx.juju.JuJuMod;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemSword;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
