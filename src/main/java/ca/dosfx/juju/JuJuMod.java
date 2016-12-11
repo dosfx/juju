@@ -1,7 +1,5 @@
 package ca.dosfx.juju;
 
-import ca.dosfx.juju.block.BlockRegistry;
-import ca.dosfx.juju.item.ItemRegistry;
 import ca.dosfx.juju.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
@@ -27,15 +25,15 @@ public class JuJuMod
     @Mod.Instance
     public static JuJuMod instance;
 
-    public static CreativeTabJuJu tabJuJu;
+    public static CreativeTabJuJu CREATIVE_TAB;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        tabJuJu = new CreativeTabJuJu(CreativeTabs.getNextID());
+        CREATIVE_TAB = new CreativeTabJuJu(CreativeTabs.getNextID());
 
-        ItemRegistry.preInit();
-        BlockRegistry.preInit();
+        //ItemRegistry.preInit();
+        //BlockRegistry.preInit();
 
         proxy.preInit(event);
     }
@@ -51,5 +49,10 @@ public class JuJuMod
     {
         proxy.postInit(event);
 
+    }
+
+    public static String getUnlocalizedName(String name)
+    {
+        return MODID + ":" + name;
     }
 }

@@ -20,7 +20,7 @@ public class BlockRegistry
     public static void preInit()
     {
         citrineOre = new Block(Material.ROCK)
-                .setCreativeTab(JuJuMod.tabJuJu)
+                .setCreativeTab(JuJuMod.CREATIVE_TAB)
                 .setHardness(1.0f)
                 .setResistance(10)
                 .setUnlocalizedName("citrine_ore");

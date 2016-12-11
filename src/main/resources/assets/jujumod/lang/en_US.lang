@@ -6,9 +6,9 @@ itemGroup.tab_jujumod=JuJu
 
 # Items
 #   Citrine
-item.citrine_axe.name=Citrine Axe
-item.citrine_gem.name=Citrine
-item.citrine_hoe.name=Citrine Hoe
-item.citrine_pickaxe.name=Citrine Pickaxe
-item.citrine_spade.name=Citrine Shovel
-item.citrine_sword.name=Citrine Sword
+item.jujumod:citrine_axe.name=Citrine Axe
+item.jujumod:citrine_gem.name=Citrine
+item.jujumod:citrine_hoe.name=Citrine Hoe
+item.jujumod:citrine_pickaxe.name=Citrine Pickaxe
+item.jujumod:citrine_spade.name=Citrine Shovel
+item.jujumod:citrine_sword.name=Citrine Sword

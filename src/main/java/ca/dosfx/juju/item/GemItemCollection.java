@@ -16,12 +16,12 @@ public class GemItemCollection
 
     public GemItemCollection(String name)
     {
-        axeItem = ItemRegistry.registerItem(new GemAxe(Item.ToolMaterial.DIAMOND), ItemNames.getAxeName(name));
-        gemItem =  ItemRegistry.registerItem(new Item(), ItemNames.getGemName(name));
-        hoeItem = ItemRegistry.registerItem(new ItemHoe(Item.ToolMaterial.DIAMOND), ItemNames.getHoeName(name));
-        pickaxeItem = ItemRegistry.registerItem(new GemPickaxe(Item.ToolMaterial.DIAMOND), ItemNames.getPickaxeName(name));
-        spadeItem = ItemRegistry.registerItem(new ItemSpade(Item.ToolMaterial.DIAMOND), ItemNames.getSpadeName(name));
-        swordItem = ItemRegistry.registerItem(new ItemSword(Item.ToolMaterial.DIAMOND), ItemNames.getSwordName(name));
+        /*axeItem = ItemRegistry.registerItem(new GemAxe(Item.ToolMaterial.DIAMOND), ItemUtil.getAxeName(name));
+        gemItem =  ItemRegistry.registerItem(new Item(), ItemUtil.getGemUnlocalizedName(name));
+        hoeItem = ItemRegistry.registerItem(new ItemHoe(Item.ToolMaterial.DIAMOND), ItemUtil.getHoeName(name));
+        pickaxeItem = ItemRegistry.registerItem(new GemPickaxe(Item.ToolMaterial.DIAMOND), ItemUtil.getPickaxeName(name));
+        spadeItem = ItemRegistry.registerItem(new ItemSpade(Item.ToolMaterial.DIAMOND), ItemUtil.getSpadeName(name));
+        swordItem = ItemRegistry.registerItem(new ItemSword(Item.ToolMaterial.DIAMOND), ItemUtil.getSwordName(name));*/
     }
 
     public Item getAxeItem()

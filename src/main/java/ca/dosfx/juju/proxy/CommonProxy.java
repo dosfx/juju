@@ -1,9 +1,11 @@
 package ca.dosfx.juju.proxy;
 
-import net.minecraft.item.Item;
+import ca.dosfx.juju.JuJuItems;
+import ca.dosfx.juju.item.ItemBase;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
  * Created by Dos on 12/3/2016.
@@ -12,7 +14,7 @@ public class CommonProxy
 {
     public void preInit(FMLPreInitializationEvent event)
     {
-
+        registerItem(JuJuItems.CITRINE_GEM);
     }
 
     public void init(FMLInitializationEvent event)
@@ -25,5 +27,8 @@ public class CommonProxy
 
     }
 
-    public void registerItem(Item item) { }
+    public void registerItem(ItemBase item)
+    {
+        GameRegistry.register(item);
+    }
 }
