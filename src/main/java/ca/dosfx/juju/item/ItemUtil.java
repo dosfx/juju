@@ -17,7 +17,7 @@ public class ItemUtil
         return getName(name, AxeSuffix);
     }
 
-    public static String getGemUnlocalizedName(String name)
+    public static String getGemName(String name)
     {
         return getName(name, GemSuffix);
     }

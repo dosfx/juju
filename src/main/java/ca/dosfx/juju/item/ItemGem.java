@@ -7,6 +7,6 @@ public class ItemGem extends ItemBase
 {
     public ItemGem(String gemName)
     {
-        super(ItemUtil.getGemUnlocalizedName(gemName));
+        super(ItemUtil.getGemName(gemName));
     }
 }

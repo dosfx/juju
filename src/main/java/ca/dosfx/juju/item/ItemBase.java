@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
  */
 public abstract class ItemBase extends Item
 {
-    public ItemBase(String name)
+    protected ItemBase(String name)
     {
         setCreativeTab(JuJuMod.CREATIVE_TAB);
         setRegistryName(JuJuMod.MODID, name);

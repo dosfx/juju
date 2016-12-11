@@ -15,6 +15,7 @@ public class CommonProxy
     public void preInit(FMLPreInitializationEvent event)
     {
         registerItem(JuJuItems.CITRINE_GEM);
+        registerItem(JuJuItems.CITRINE_PICKAXE);
     }
 
     public void init(FMLInitializationEvent event)
