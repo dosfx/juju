@@ -32,9 +32,6 @@ public class JuJuMod
     {
         CREATIVE_TAB = new CreativeTabJuJu(CreativeTabs.getNextID());
 
-        //ItemRegistry.preInit();
-        //BlockRegistry.preInit();
-
         proxy.preInit(event);
     }
 
@@ -48,7 +45,6 @@ public class JuJuMod
     public void postInit(FMLPostInitializationEvent event)
     {
         proxy.postInit(event);
-
     }
 
     public static String getUnlocalizedName(String name)
