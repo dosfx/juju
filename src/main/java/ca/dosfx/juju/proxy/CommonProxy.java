@@ -15,7 +15,11 @@ public class CommonProxy
     public void preInit(FMLPreInitializationEvent event)
     {
         registerItem(JuJuItems.CITRINE_GEM);
+        registerItem(JuJuItems.CITRINE_AXE);
+        registerItem(JuJuItems.CITRINE_HOE);
         registerItem(JuJuItems.CITRINE_PICKAXE);
+        registerItem(JuJuItems.CITRINE_SPADE);
+        registerItem(JuJuItems.CITRINE_SWORD);
     }
 
     public void init(FMLInitializationEvent event)

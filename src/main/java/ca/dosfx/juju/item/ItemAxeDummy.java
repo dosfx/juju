@@ -5,9 +5,9 @@ import net.minecraft.item.ItemAxe;
 /**
  * Created by Dos on 2016-12-08.
  */
-public class GemAxe extends ItemAxe
+public class ItemAxeDummy extends ItemAxe
 {
-    public GemAxe(ToolMaterial material)
+    public ItemAxeDummy(ToolMaterial material)
     {
         super(material);
     }
