@@ -21,10 +21,12 @@ public class ClientProxy extends CommonProxy
     @Override
     public void preInit(FMLPreInitializationEvent event)
     {
+        // array tracks items registered in the common proxy
         registeredItems = new ArrayList<ItemBase>();
 
         super.preInit(event);
 
+        // register models for everything
         for (ItemBase item : registeredItems)
         {
             registerItemModel(item);
@@ -49,13 +51,16 @@ public class ClientProxy extends CommonProxy
     @Override
     public void registerItem(ItemBase item)
     {
+        // save the item
         registeredItems.add(item);
 
+        // pass to common to register
         super.registerItem(item);
     }
 
     private void registerItemModel(ItemBase item)
     {
+        // ItemBase provides the model path
         ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getModelPath(), "inventory"));
     }
 }
